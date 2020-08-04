@@ -137,5 +137,18 @@ german_credit的数据结果如下
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/fa0.png)
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/fa1.png)
 
+# 5 build_model.py
+
+stepwise,MonteCarlo是基于statsmodels中逻辑回归的两个评分卡模型，具体打分需要在调用score.py。
+
+model_lgbm是一个简单lgbm的模型训练kernel，需要再加上grid-search.
+
+shap_woe_explain是用来解释机器学习模型中变量是否合理的，如果woe和shap是相反的两种趋势，那么说明变量虽然看起来进入了模型，但是没有发挥应有的作用。
+
+如图所示两种情况：
+
+
+
+
 
 
