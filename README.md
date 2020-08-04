@@ -51,6 +51,7 @@ y_tf_idf基于y的tf-idf衍生，
 
 uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised）。
 
+![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/tsne.png)
 
 
 
