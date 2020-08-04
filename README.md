@@ -143,10 +143,14 @@ stepwise,MonteCarlo是基于statsmodels中逻辑回归的两个评分卡模型�
 
 model_lgbm是一个简单lgbm的模型训练kernel，需要再加上grid-search.
 
+MyRNN是一个简单的rnn模型示例。准备加入贷中数据，把类别embeding一下，concat上交易数据，做个rnn的b卡，看以后能去哪家在继续尝试吧。
+
 shap_woe_explain是用来解释机器学习模型中变量是否合理的，如果woe和shap是相反的两种趋势，那么说明变量虽然看起来进入了模型，但是没有发挥应有的作用。
 
 如图所示两种情况：
 
+![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/微信图片_20200804221500.jpg)
+![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/微信图片_20200804221506.jpg)
 
 
 
