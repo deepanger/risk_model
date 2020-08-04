@@ -24,8 +24,11 @@
 # 应用解释：
 
 1、data_transform.py 里边是一个就一个主要的类：feature_eng
+
 ceshi=feature_eng(col1,col2,y, Data,Test_data)
+
 col1:数值型变量的list
+
 col2:离散型变量的list
 
 
