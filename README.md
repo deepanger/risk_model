@@ -152,7 +152,30 @@ shap_woe_explain是用来解释机器学习模型中变量是否合理的，如�
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/微信图片_20200804221500.jpg)
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/微信图片_20200804221506.jpg)
 
+# 6 distribution_adjust.py
 
+这部分可以看我之前写的文章，https://mp.weixin.qq.com/s/722dDYdKf2sMqP8wGwVvZA。利用CGAN（有监督对抗网络）选择建模样本
+
+你也可以简单用个lgbm定义好label做这个，就是一个从大样本数据中召回和新业务样本类似数据的功能。
+
+
+# 7 score.py
+
+这一部分是按照odds，pdo基准和翻倍打分的代码，比较流程话。
+
+score类的输入项：
+
+model:logit = sm.Logit(m1[y],m1[col+['1']])          model = logit.fit() 是这里边的拟合之后的结果
+
+col 是模型的入模变量。
+
+messa 是代码2部分中ff_bin_woe生成的woe分箱的信息，就是类中的messa的信息。
+
+base 是基准比如600.
+
+odd是odd比如 20
+
+pdo是pdo。
 
 
 
