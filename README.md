@@ -38,5 +38,20 @@ Data 是训练集
 Test_data是测试集
 
 dir(feature_eng)查看方法 
-drop_missing是处理缺失值，gbdt_e是生成gbdt衍生变量，label_encode是生成label_encode变量，woe_encode用来使用woe给离散变量赋值，y_tf_idf基于y的tf-idf衍生，uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised）。
+
+drop_missing是处理缺失值，
+
+gbdt_e是生成gbdt衍生变量，
+
+label_encode是生成label_encode变量，
+
+woe_encode用来使用woe给离散变量赋值，
+
+y_tf_idf基于y的tf-idf衍生，
+
+uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised）。
+
+
+
+
 
