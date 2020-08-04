@@ -5,3 +5,7 @@
 好好修改添加吧。如果发现bug或者使用问题欢迎发邮件给我：fengyuguohou2010@hotmail.com
 
 #目录：
+1、一些非传统衍生类的的数据处理，包括缺失值处理，label_encode,离散值woe赋值，基于y信息的tf-idf，基于四种无监督聚类（kmeans，pca，tsne，nmf）变量衍生，基于gbdt的变量衍生
+有时间（后续会把基于rnn之类的衍生加上）。
+2、
+
