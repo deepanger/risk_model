@@ -52,6 +52,7 @@ y_tf_idf基于y的tf-idf衍生，
 uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised）。
 
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/tsne.png)
+
 可以看到根据german_credit的数据画出图的标记，虽然是无监督生成的结果，但是对y的0和1区分能力很强很契合，可能有一定运气的成分。
 
 
