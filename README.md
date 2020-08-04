@@ -7,7 +7,9 @@
 # 目录：
 
 1、一些非传统衍生类的的数据处理，包括缺失值处理，label_encode,离散值woe赋值，基于y信息的tf-idf，基于四种无监督聚类（kmeans，pca，tsne，nmf）变量衍生，基于gbdt的变量衍生
-有时间（后续会把基于rnn之类的衍生加上）。
+有时间（后续会把基于rnn之类的衍生加上）。存在data_transform.py文件。
 
-2、
+2、自动woe最优分箱（单调或者单峰且满足iv等条件），接近sas-em效果。bin_new.py
+
+3、
 
