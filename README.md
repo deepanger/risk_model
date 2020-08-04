@@ -58,4 +58,46 @@ uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiw
 
 # 2 bin_new.py
 
+这是一个自动完成分箱几乎不用手动调整的代码，只需调用类：ff_bin_woe。
+
+输入项中：
+y label
+
+data 输入的训练集
+
+data1 可以同时输入测试集，没有测试集输入pd.DataFrame()
+
+piece 期望分bin的最大箱数
+
+rate 每一个分箱样本数最小希望占比
+
+min_size 每一个分箱最小的样本数
+
+out_in_list 特殊值，单独一箱
+
+not_var_list 不需要分箱的变量
+flag_list=[y] 存放lanel
+
+ks 希望开始粗分箱根据ks还是iv，Ture为ks，False为iv。（智能输入这两个选项）
+
+ur 希望分箱中有单峰还是希望所有变量都分为单调。只能选择True or False。
+
+示例 
+
+ceshi=ff_bin_woe('y',factor0[col+['y']], pd.DataFrame(), 5, 0.05, 50, [], [], ['y'],True,False)
+
+ceshi.woe()
+
+生成的结果中 ceshi.iv是存放iv结果，ceshi.d0存放分箱之后的数据集，ceshi.messa（比较重要，后续生成打分的文件也要用到）存放分箱的规则。
+
+如果新来的一个测试集data，只需调用：dd=ceshi.dwoe(Data.copy())
+
+既可以对新测试集完成woe变换。
+
+注：ks=False 即采用iv做粗分箱，有可能会取得最终更高的iv的分bin，但是分箱速度回比ks粗分箱慢一点。
+
+
+
+
+
 
