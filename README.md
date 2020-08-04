@@ -23,7 +23,8 @@
 
 # 应用解释：
 
-1、data_transform.py 里边就一个主要的类：feature_eng
+# 1
+data_transform.py 里边就一个主要的类：feature_eng
 
 ceshi=feature_eng(col1,col2,y, Data,Test_data)
 
@@ -55,5 +56,6 @@ uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiw
 
 可以看到根据german_credit的数据画出图的标记，虽然是无监督生成的结果，但是对y的0和1区分能力很强很契合，可能有一定运气的成分。
 
-
+# 2
+bin_new.py
 
