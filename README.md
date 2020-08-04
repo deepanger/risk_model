@@ -133,5 +133,9 @@ ad._plot()
 画图
 
 
+german_credit的数据结果如下
+![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/fa0.png)
+![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/fa1.png)
+
 
 
