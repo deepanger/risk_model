@@ -96,6 +96,22 @@ ceshi.woe()
 
 注：ks=False 即采用iv做粗分箱，有可能会取得最终更高的iv的分bin，但是分箱速度回比ks粗分箱慢一点。
 
+# 3 auswahlen.py
+
+auswahle这个类主要实现三个功能，
+
+1、psi计算，
+
+2、根据相关性和单变量ks，去除相关性高的两个变量中ks较低的一个。
+
+3、varclust变量聚类分析，类似sas中的 proc varclus
+
+# 4 factor_analysis.py
+
+实现无监督因子分析，可以结合业务经验预先判断维度的和衍生逻辑，比较适用一些简单的无监督打分场景。
+
+
+
 
 
 
