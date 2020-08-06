@@ -54,7 +54,7 @@ woe_encode用来使用woe给离散变量赋值，
 
 y_tf_idf基于y的tf-idf衍生，
 
-uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised）。
+uns是生成四种无监督衍生（详见：https://github.com/maidoudoujiushiwo/Unsupervised ）
 
 ![image](https://github.com/maidoudoujiushiwo/risk_model/blob/master/image/tsne.png)
 
@@ -154,7 +154,7 @@ shap_woe_explain是用来解释机器学习模型中变量是否合理的，如�
 
 # 6 distribution_adjust.py
 
-这部分可以看我之前写的文章，https://mp.weixin.qq.com/s/722dDYdKf2sMqP8wGwVvZA。
+这部分可以看我之前写的文章，https://mp.weixin.qq.com/s/722dDYdKf2sMqP8wGwVvZA 。
 
 利用CGAN（有监督对抗网络）选择建模样本
 
