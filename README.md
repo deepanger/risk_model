@@ -154,7 +154,9 @@ shap_woe_explain是用来解释机器学习模型中变量是否合理的，如�
 
 # 6 distribution_adjust.py
 
-这部分可以看我之前写的文章，https://mp.weixin.qq.com/s/722dDYdKf2sMqP8wGwVvZA。利用CGAN（有监督对抗网络）选择建模样本
+这部分可以看我之前写的文章，https://mp.weixin.qq.com/s/722dDYdKf2sMqP8wGwVvZA。
+
+利用CGAN（有监督对抗网络）选择建模样本
 
 你也可以简单用个lgbm定义好label做这个，就是一个从大样本数据中召回和新业务样本类似数据的功能。
 
