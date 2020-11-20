@@ -5,12 +5,11 @@ Created on Thu Sep 10 10:26:40 2020
 @author: wu
 """
 
-import numpy as np
 
-def irr_apr(rate):
-    n=12
+def irr_apr(rate,n):
+#    n=12
     a=10000
-    f=a*rate*(n/12)/n    
+    f=a*rate/12    
     f1=0
     ff=[f1+(f-f1)/10000*k for k in range(10000)]
     for l in ff:
@@ -20,8 +19,12 @@ def irr_apr(rate):
 #        print(irr-rate)
         if  abs(irr-rate)<0.0001:
             return l/10000.0,r
+
+
+
+
 def macd(rate,m,n):
-    r=irr_apr(rate)[0]
+    r=irr_apr(rate,n)[0]
     pv=0
     npv=0
     for l in range(m+1)[1:-1]:
@@ -45,67 +48,11 @@ def loss(rate,bad,m,n):
     return br
 
 
-#
-#loss(0.27,0.025,5,12)
-#
-#loss(0.18,0.0721,18,36)
-#
-#loss(0.18,0.08,18,36)
-#
-#
-#for i in range(10):
-#    print(0.07+i/100)
-#    print(loss(0.18,0.07+i/100,18,36))
-#    
-#    
-#
-#loss(0.18,0.025,5,12)
-#24*0.025/(6)
-#loss=br*12/
-#
-#
-#m,n=18,36
-#
-#def rrt(rate,m,n):
-#    ll=0
-#    for l in range(m):
-#        ll=ll+(n-l)/n
-#    ll=ll/m    
-#    return 12/m*rate/ll
-#
-#
-#
-#
-#
-#def rrt(rate,m,n):
-#    ll=0
-#    for l in range(m):
-#        ll=ll+(n-l)/n
-#    ll=ll/m
-#    return 12/m*rate/ll
-#
-#        
-#rrt(0.07,18,36)
-#loss(0.18,0.07,18,36)
-#
-#rrt(0.03,6,12)
-#
-#loss(0.24,0.03,6,12)
-#
-#
-#
-#rrt(0.03,6,12)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def rrt(rate,m,n):
+    ll=0
+    for l in range(int(m)):
+        ll=ll+(n-l)/float(n)
+    j=m-int(m)
+    ll=ll+j*(n-int(m))/float(n)
+    ll=ll/float(m)
+    return 12/m*rate/ll
